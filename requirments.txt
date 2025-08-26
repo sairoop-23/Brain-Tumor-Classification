@@ -1,0 +1,19 @@
+# Core deep learning and numerical libraries
+tensorflow>=2.4.0
+keras>=2.4.0
+numpy>=1.19.0
+pandas>=1.3.0
+scikit-learn>=0.24.0
+
+# Image processing and visualization
+matplotlib>=3.3.0
+opencv-python  # or pillow>=8.0.0
+
+# Dataset utilities (optional)
+tensorflow-datasets>=4.0.0
+
+# Optional: API or deployment tools
+flask>=2.0.0      # or fastapi>=0.70.0
+uvicorn>=0.15.0
+python-multipart>=0.0.5
+loguru>=0.6.0
