@@ -1,5 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4da5df13-2be9-4563-9753-4f49acfad5c0" /># Brain Tumor Classification
-
+#Brain Tumor Classifcation
 A deep learning–based project for classifying brain tumor images into categories such as glioma, meningioma, pituitary tumor, and healthy tissue using pretrained model ResNet 50
 
 ---
