@@ -8,7 +8,7 @@ A deep learning project for classifying brain MRI images into four categories: *
 
 - [Overview](#overview)  
 - [Dataset](#dataset)  
-- [Model](#model)  
+- [Model](#model) 
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [Project Structure](#project-structure)  
@@ -61,11 +61,11 @@ source venv/bin/activate     # Linux/macOS
 venv\Scripts\activate        # Windows
 
 pip install -r requirements.txt
+```
 
-## 🚀 Usage
 
+## Usage
 ### Running the Notebook
-
 jupyter notebook res.ipynb
 
 - Place your dataset in Training/ and Testing/ folders.  
