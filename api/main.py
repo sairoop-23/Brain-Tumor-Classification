@@ -6,10 +6,10 @@ from utils import preprocess_image
 from io import BytesIO
 
 # Load model
-model_path = r"model/resnet50_brain_tumor_model.h5"
+model_path = r"model/resnet50_brain_tumor_model.h5" #add model path from local system
 model = load_model(model_path)
 
-# ⚠️ Make sure this matches your training class order!
+
 class_names = ["glioma", "meningioma", "no_tumor", "pituitary"]
 
 app = FastAPI(title="Brain Tumor API with ResNet50")
@@ -30,3 +30,4 @@ async def predict(file: UploadFile = File(...)):
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=800, reload=True)
+
