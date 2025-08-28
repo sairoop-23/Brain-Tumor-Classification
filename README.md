@@ -14,9 +14,7 @@ A deep learning project for classifying brain MRI images into four categories: *
 - [Project Structure](#project-structure)  
 - [FastAPI Integration](#fastapi-integration)  
 - [Results](#results)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact](#contact)
+
 
 ---
 
