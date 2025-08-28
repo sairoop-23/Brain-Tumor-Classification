@@ -3,7 +3,7 @@ import numpy as np
 from io import BytesIO
 from PIL import Image
 
-IMG_SIZE = 150
+IMG_SIZE = 150 #model trained with image size=150,150
 
 def preprocess_image(file_bytes):
     # Load image as grayscale
@@ -19,3 +19,4 @@ def preprocess_image(file_bytes):
     img = img / 255.0
     img = np.expand_dims(img, axis=0)  # add batch dimension
     return img
+
