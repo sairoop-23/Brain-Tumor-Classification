@@ -75,3 +75,57 @@ jupyter notebook res.ipynb
 
 - Download the pretrained model via the Google Drive link above.  
 - Load it directly in the notebook to evaluate without retraining.
+
+
+## Project Structure
+
+Brain-Tumor-Classification/
+│
+├── api/                  # FastAPI integration
+│   ├── main.py           # FastAPI app
+│   └── requirements.txt  # API dependencies
+│
+├── results/              # Confusion matrix, plots, metrics
+├── res.ipynb             # Main Jupyter Notebook
+├── requirements.txt      # Dependencies
+├── dataset preview.png   # Dataset sample preview
+└── README.md             # Documentation
+
+## FastAPI Integration
+
+### Run API
+
+cd api
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+- Swagger UI → http://127.0.0.1:8000/docs
+- ReDoc → http://127.0.0.1:8000/redoc
+
+### Endpoints
+
+Root
+GET /
+
+Predict
+POST /predict
+
+Example Request:
+
+curl -X POST "http://127.0.0.1:8000/predict" \
+     -H "accept: application/json" \
+     -H "Content-Type: multipart/form-data" \
+     -F "file=@sample_image.jpg"
+
+Example Response:
+
+{
+  "class": "Pituitary",
+  "confidence": 0.9742
+}
+
+## Results
+
+- Accuracy: ~98% (ResNet-50)
+- Metrics: Accuracy, Precision, Recall
+- Outputs: confusion matrix, sample predictions, plots (see results/ folder)
