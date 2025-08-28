@@ -42,6 +42,20 @@ This repository uses **transfer learning** (ResNet-50 and other CNNs) to classif
 
 ---
 
+## 🚀 Usage
+
+### Running the Notebook
+
+jupyter notebook res.ipynb
+
+- Place your dataset in Training/ and Testing/ folders.  
+- Run all cells to train, evaluate, and visualize results.
+
+### Using the Pretrained Model
+
+- Download the pretrained model via the Google Drive link above.  
+- Load it directly in the notebook to evaluate without retraining.
+
 ## ​ Model
 
 - Uses **ResNet-50 (pre-trained on ImageNet)** and fine-tuned CNNs.  
